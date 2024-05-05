@@ -1,0 +1,104 @@
+body {
+	font-family: "Inter";
+	margin: 0;
+	background-color: #f6f7f8;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+	overflow: scroll;
+}
+
+.main-content {
+	margin-top: 16px;
+}
+
+.arrow {
+	width: 37px;
+	height: 37px;
+	padding: 2.5px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.title {
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titleText {
+	width: 95%;
+	font-size: 61px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.legalNoticeDescription {
+	width: 95%;
+	gap: 24px;
+}
+
+.imprint {
+	height: 167px;
+	gap: 16px;
+}
+
+.imprintTitle {
+	width: 95%;
+	padding-top: 32px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.imprintListPadding {
+	padding-left: 24px;
+	padding-top: 48px;
+}
+
+.imprintItemTitel {
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 19.2px;
+	text-align: left;
+	padding-top: 24px;
+	padding-bottom: 4px;
+}
+
+.joinBlue {
+	color: #0c8ce9;
+}
+
+@media (max-width: 1000px) {
+	.date {
+		padding-bottom: 80px;
+	}
+	.titleText {
+		font-size: 41px;
+	}
+	.legalNoticeDescription {
+		width: 90%;
+	}
+}
+
+@media (max-width: 500px) {
+	.main-content {
+		margin: -5px;
+	}
+	.titleText {
+		font-size: 45px;
+	}
+	.imprintListPadding {
+		padding-left: 15px;
+		padding-top: 48px;
+	}
+	.legalNoticeDescription {
+		width: 100%;
+	}
+}

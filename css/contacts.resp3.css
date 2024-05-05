@@ -1,0 +1,378 @@
+@media (max-width: 1350px) {
+	.nameContainer {
+		gap: 20px;
+		justify-content: flex-start;
+	}
+	.inicialeCircle {
+		width: 90px;
+		height: 90px;
+	}
+	.inicial {
+		font-size: 28px;
+	}
+	.fullname {
+		font-size: 34px;
+	}
+	.name {
+		margin-bottom: 0;
+	}
+	.title {
+		font-size: 50px;
+	}
+	.contactsTitle {
+		gap: 20px;
+	}
+	.subtitle {
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.contactList {
+		margin-top: -157px;
+	}
+	.contactOverview {
+		left: 500px;
+	}
+	.contactsTitle {
+		left: 500px;
+	}
+}
+
+@media (max-width: 1212px) {
+	.addNewContactContainer {
+		width: 100%;
+		height: auto;
+	}
+	.closeDiv {
+		position: fixed;
+		top: 48px;
+		left: 93%;
+	}
+	.buttons {
+		left: 60%;
+		gap: 24px;
+	}
+	.inputFileds {
+		left: 692px;
+	}
+	.image {
+		left: 525px;
+	}
+	.nameInputContainer,
+	.emailInputContainer,
+	.phoneInputContainer,
+	.nameEditContainer,
+	.emailEditContainer,
+	.phoneEditContainer {
+		width: 322px;
+		background-position: 280px;
+	}
+}
+
+@media (max-width: 1140px) {
+	.buttons {
+		left: 55%;
+		gap: 20px;
+	}
+	.image {
+		left: 525px;
+	}
+	.nameInputContainer,
+	.emailInputContainer,
+	.phoneInputContainer,
+	.nameEditContainer,
+	.emailEditContainer,
+	.phoneEditContainer {
+		width: 272px;
+		background-position: 230px;
+	}
+	.CreateResponseContainerTransition {
+		transition: transform 0.35s ease-in-out;
+		transform: translateX(-3150px);
+	}
+
+	.CreateResponseContainerTransitionRemove {
+		transition: transform 0.35s ease-in-out;
+		transform: translateX(31500px);
+	}
+}
+
+@media (max-width: 1060px) {
+	.inputFileds {
+		left: 592px;
+	}
+}
+
+@media (max-width: 960px) {
+	.addNewContactContainer  {
+		display: none;
+	}
+
+	.overlay {
+		display: none !important;
+	}
+
+	.blueArrowLeftContainer,
+	.addNewContactIconContResp,
+	.editContactIconContResp {
+		left: 80%;
+	}
+
+	.editContactIconContResp {
+		position: fixed;
+	}
+
+	.editContSmallContResp {
+		left: 75%;
+		background-color: white;
+	}
+	.contactList {
+		width: 100vw;
+	}
+	.contactOverview,
+	.contactsTitle,
+	.addContactsBtnDiv {
+		display: none;
+	}
+
+	.addNewContactIconContResp {
+		display: flex;
+	}
+	.editContSmallContResp {
+		display: block;
+		position: fixed;
+	}
+}
+
+@media (max-width: 850px) {
+	.inicialeCircle {
+		width: 70px;
+		height: 70px;
+	}
+	.inicial {
+		font-size: 22px;
+	}
+	.fullname {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 500px) {
+	.inicialCircleGroundResp {
+		width: 70px;
+		height: 70px;
+	}
+	.blueArrowLeftContainer {
+		left: 75%;
+	}
+	.addNewContactIconContResp,
+	.editContactIconContResp {
+		position: fixed;
+		left: 75%;
+	}
+	.editContSmallContResp {
+		left: 65%;
+	}
+	.contactList {
+		width: 464px;
+	}
+	.contactNameTextResp {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 400px) {
+	.addNewContactRespContainer,
+	.editContactRespContainer {
+		width: 376px;
+		margin-left: 10px;
+	}
+	.addNewContactWindowHeaderContainer {
+		width: 376px;
+	}
+	.editContactWindowHeaderContainer {
+		width: 376px;
+	}
+	.addNewContactRespCloseContainer {
+		left: 308px;
+		margin-left: 10px;
+	}
+	.inputResp {
+		width: 344px;
+		background-position: 304px;
+	}
+	.addNewContactRespImageContainer {
+		left: 128px;
+	}
+	.editContactRespImageContainer {
+		left: 128px;
+	}
+	.contactDetailsRespHeader {
+		flex-direction: column;
+		align-items: center;
+	}
+	.contInfTitleCont {
+		margin-top: 80px;
+		text-align: center;
+	}
+	.detailsFieldContactResp {
+		margin-top: 160px;
+		align-items: center;
+	}
+}
+
+@media (max-width: 380px) {
+	.addNewContactRespContainer {
+		width: 356px;
+		margin-left: 20px;
+	}
+	.editContactRespContainer {
+		width: 356px;
+		margin-left: 10px;
+	}
+	.addNewContactWindowHeaderContainer {
+		width: 356px;
+	}
+	.editContactWindowHeaderContainer {
+		width: 356px;
+	}
+	.addNewContactRespCloseContainer {
+		left: 288px;
+	}
+	.inputResp {
+		width: 324px;
+		background-position: 284px;
+	}
+	.addNewContactRespImageContainer {
+		left: 118px;
+	}
+	.editContactRespImageContainer {
+		left: 118px;
+	}
+	.createButtonContainerAddNewContResp {
+		left: 77px;
+	}
+	.editContactRespButtons {
+		left: 87.5px;
+	}
+}
+
+@media (max-width: 375px) {
+	.contactCard {
+		padding: 15px 14px 15px 14px;
+		gap: 15px;
+	}
+	.contactName {
+		font-size: 16px;
+	}
+	.firstCharacter {
+		margin-left: 28px;
+		font-size: 20px;
+	}
+
+	.createButtonContainerAddNewContResp {
+		left: 77px;
+	}
+}
+
+@media (max-width: 360px) {
+	.addNewContactRespContainer {
+		width: 336px;
+		margin-left: 30px;
+	}
+	.editContactRespContainer {
+		width: 336px;
+		margin-left: 10px;
+	}
+	.addNewContactWindowHeaderContainer {
+		width: 336px;
+	}
+	.editContactWindowHeaderContainer {
+		width: 336px;
+	}
+	.addNewContactRespCloseContainer {
+		left: 248px;
+		margin-left: 30px;
+	}
+	.addNewContactRespImageContainer {
+		left: 113px;
+	}
+	.editContactRespImageContainer {
+		left: 113px;
+	}
+	.createButtonContainerAddNewContResp {
+		left: 67px;
+	}
+	.inputResp {
+		width: 294px;
+		background-position: 264px;
+	}
+	.editContactRespButtons {
+		left: 77.5px;
+	}
+}
+
+@media (max-width: 340px) {
+	.addNewContactRespContainer {
+		width: 316px;
+		margin-left: 40px;
+	}
+	.editContactRespContainer {
+		width: 316px;
+		margin-left: 10px;
+	}
+	.addNewContactWindowHeaderContainer {
+		width: 316px;
+	}
+	.editContactWindowHeaderContainer {
+		width: 316px;
+	}
+	.addNewContactRespCloseContainer {
+		left: 228px;
+		margin-left: 30px;
+	}
+	.addNewContactRespImageContainer {
+		left: 103px;
+	}
+	.editContactRespImageContainer {
+		left: 103px;
+	}
+	.createButtonContainerAddNewContResp {
+		left: 57px;
+	}
+	.inputResp {
+		width: 274px;
+		background-position: 244px;
+	}
+	.editContactRespButtons {
+		left: 67.5px;
+	}
+}
+
+@media (max-width: 335px) {
+	.contactCard {
+		padding: 10px 10px 10px 10px;
+		gap: 10px;
+	}
+	.firstCharacter {
+		margin-left: 22px;
+		font-size: 20px;
+	}
+	.contactDetails {
+		gap: 0;
+	}
+}
+
+@media (max-width: 960px) {
+	.addContactsBtnDiv {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 960px) {
+	.contRespWindow {
+		display: none;
+	}
+}

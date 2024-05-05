@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/fonts.css" />
+		<link rel="stylesheet" href="../css/sidemenu.css" />
+		<link rel="stylesheet" href="../css/summary.css" />
+		<link rel="shortcut icon" href="../img/Join-Logo.png" type="image/x-icon" />
+		<title>Summary</title>
+	</head>
+	<body onload="initSummary()" onclick="closeSidemenu()">
+		<div w3-include-html="../templates/sidemenu.html"></div>
+		<div class="main-content">
+			<div class="summary-header">
+				<h1>Join 360</h1>
+				<span class="vertical-line"></span>
+				<p class="slogan">Key Metrics at a Glance</p>
+				<span class="horizontal-line"></span>
+			</div>
+			<div class="flex">
+				<div class="main-tasks-container">
+					<div class="top-row">
+						<a href="../html/board.html" class="to-do-btn summary-btn summary-btn-top">
+							<div class="top-row-img-l"></div>
+							<div class="counter">
+								<div class="amount summaryToDo" id="toDoAmount"></div>
+								<p>To-do</p>
+							</div>
+						</a>
+						<a href="../html/board.html" class="done-btn summary-btn summary-btn-top">
+							<div class="top-row-img-r"></div>
+							<div class="counter">
+								<div class="amount summaryDone"></div>
+								<p>Done</p>
+							</div>
+						</a>
+					</div>
+					<div class="mid-row">
+						<a href="../html/board.html" class="urgent-task summary-btn">
+							<div class="urgent-task-left">
+								<img src="../img/urgent.png" alt="" />
+								<div class="counter">
+									<div class="amount summaryUrgent" id="urgent-counter">1</div>
+									<p>Urgent</p>
+								</div>
+							</div>
+							<span class="vertical-line-urgent"></span>
+							<div class="urgent-task-right">
+								<p class="deadline-date summaryDate" id="mid-row-date"></p>
+								<p class="deadline-text">Upcoming Deadline</p>
+							</div>
+						</a>
+					</div>
+					<div class="bottom-row">
+						<a href="../html/board.html" class="summary-btn summary-btn-bottom">
+							<div class="amount summaryAllTasks"></div>
+							<p>Tasks on Board</p>
+						</a>
+						<a href="../html/board.html" class="summary-btn summary-btn-bottom">
+							<div class="amount summaryProgress"></div>
+							<p>Tasks in Progress</p>
+						</a>
+						<a href="../html/board.html" class="summary-btn summary-btn-bottom">
+							<div class="amount summaryFeedback"></div>
+							<p>Awaiting Feedback</p>
+						</a>
+					</div>
+				</div>
+				<div class="wrapper">
+					<div class="greeting" id="greeting-text"></div>
+					<div id="greeting-name"></div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/script.js"></script>
+		<script src="../js/summary.js"></script>
+		<script src="../templates/sidemenu.js"></script>
+		<script src="../js/board.js"></script>
+		<script src="../js/logIn.js"></script>
+	</body>
+</html>

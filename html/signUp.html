@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Join</title>
+ <link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/fonts.css" />
+ <link rel="shortcut icon" href="../img/Join-Logo.png" type="image/x-icon" />
+ <link rel="stylesheet" href="../css/signUp.css">
+ <link rel="stylesheet" href="../css/SignUpResponsive.css">
+ <script src="../js/script.js"></script>
+ <script src="../js/signUp.js"></script>
+ <script src="../js/contacts.js"></script>
+</head>
+<body>
+ <div class="Website">
+  <img src="../img/Join-Logo.png" alt="Join Logo" class="logo-icon">
+  <form class="signUpField" onsubmit="return validateForm(event);">
+   <a href="../html/logIn.html">
+    <img src="../img/Arrow.png" alt="Arrow" class="arrow-icon">
+  </a>  
+   <div class="headline">
+    <h1>Sign up</h1>
+   </div>
+    <div onsubmit="addUser(); return false;" class="input">
+     <div class="input-container">
+      <input id="name" required class="name" type="name" placeholder="Name">
+      <img src="../img/Person.png" class="person-icon">
+    </div>
+      <div class="input-container">
+        <input id="email" required autocomplete="email" class="email" type="email" placeholder="Email">
+        <img src="../img/Mail.png" class="email-icon">
+      </div>
+      <div class="password-container">
+       <input id="password" required autocomplete="new-password" class="password" type="password" placeholder="Password" oninput="handlePasswordInput('password');">
+       <img id="passwordIcon" src="../img/Lock.png" class="password-icon" onclick="togglePasswordVisibility('password', 'passwordIcon');" alt="Toggle Password Visibility">
+     </div>
+   <div class="confirmPw-container">
+       <input id="confirmPw" required class="password" autocomplete="new-password" type="password" placeholder="Confirm Password" oninput="handlePasswordInput('confirmPw');">
+       <img id="confirmPwIcon" src="../img/Lock.png" class="password-icon" onclick="togglePasswordVisibility('confirmPw', 'confirmPwIcon');" alt="Toggle Password Visibility">
+   </div>
+   
+      <a class="wrongPw">Ups! your password don't match</a>
+      <div class="checkRemember">
+       <img id="checkboxImg" src="../img/Checkbox.png" class="checkbox" onclick="toggleCheckbox();" alt="Checkbox">
+       <p class="remember">
+        <a class="color1">I accept the</a>
+        <a class="color2" href="../html/privacyPolicy.html">Privacy policy</a>
+       </p>
+      </div>
+     </div>
+      <button type="submit" class="signUp-button">Sign up</button>
+    </form>
+  <footer class="footer">
+   <a id="privacyPolicy" href="../html/privacyPolicy.html">Privacy Policy</a>
+   <a id="legalNotice" href="../html/legalNotice.html">Legal notice</a>
+  </footer>
+</div>
+</div>
+</body>
+</html>

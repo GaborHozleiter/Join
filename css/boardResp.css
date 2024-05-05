@@ -1,0 +1,131 @@
+@media (max-width: 1400px) {
+	.tasks {
+		flex-direction: column;
+		max-width: 1144px;
+	}
+
+	.tasks-container {
+		flex-direction: row;
+	}
+
+	.single-task {
+		width: 252px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.main-content {
+		padding-top: 48px;
+		padding-left: auto;
+		padding-right: auto;
+	}
+
+	.tasks {
+		padding-bottom: 86px;
+	}
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 47px;
+	}
+
+	.first-section {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.search-section {
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.remove-on-small {
+		display: none;
+	}
+
+	.add-task {
+		width: 40px;
+		height: 40px;
+		padding: 3px;
+	}
+}
+
+@media (max-width: 650px) {
+	.big-card {
+		font-size: 16px;
+	}
+
+	.big-card-title {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 550px) {
+	.wrapper-add-task {
+		padding: 0;
+	}
+
+	.header-section {
+		width: 100%;
+	}
+
+	.header-btn {
+		display: inline-block;
+	}
+
+	.searchbar-container {
+		margin-right: 0;
+	}
+
+	.main-task-btn {
+		display: none;
+	}
+
+	.big-card {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.main-content {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+.card-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 550px;
+	background-color: #2a3647;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border-radius: 10px;
+	padding: 16px;
+	z-index: 999;
+	cursor: auto;
+}
+
+.card-menu-item {
+	cursor: pointer;
+}
+
+.card-menu-line {
+	height: 1px;
+	background-color: rgba(211, 211, 211, 0.363);
+	width: 90%;
+}
+
+.d-none {
+	display: none;
+}

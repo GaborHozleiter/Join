@@ -1,0 +1,439 @@
+body::-webkit-scrollbar {
+	display: none;
+	overflow: scroll;
+}
+
+.CreateResponseContainer {
+	position: fixed;
+	top: 660px;
+	left: 740px;
+	box-shadow: 0px 0px 4px 0px #0000001a;
+	margin-left: 3000px;
+}
+
+.CreateResponseContainerTransition {
+	transition: transform 0.35s ease-in-out;
+	transform: translateX(-3000px);
+}
+
+.CreateResponseContainerTransitionRemove {
+	transition: transform 0.35s ease-in-out;
+	transform: translateX(3000px);
+}
+
+.CreateResponse {
+	width: 326px;
+	height: 74px;
+	border-radius: 20px;
+	background: #2a3647;
+	box-shadow: 0px 0px 4px 0px #00000026;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.response {
+	width: 265px;
+	height: 24px;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.addNewContactIconContResp {
+	display: none;
+	position: fixed;
+	width: 56px;
+	height: 56px;
+	bottom: 100px;
+	left: 370px;
+	padding: 12px 0px 0px 0px;
+	gap: 10px;
+	border-radius: 46px;
+	border: 1px 0px 0px 0px;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	border: 1px solid #2a3647;
+	background: #2a3647;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.addNewContactIconCont {
+	width: 32px;
+	height: 32px;
+}
+
+.addNewContIconResp {
+	width: 29.33px;
+	height: 20.91px;
+	top: 17.76px;
+	left: 13.33px;
+}
+
+.createIconAddNewContResp {
+	width: 15.49px;
+	height: 11.23px;
+	z-index: 2000;
+	color: #ffffff;
+	position: relative;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.addNewContactRespContainer {
+	z-index: 100000;
+	width: 396px;
+	height: 760px;
+	position: fixed;
+	left: calc(50% - 198px);
+	bottom: 0;
+	margin-bottom: -3000px;
+	gap: 49px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 4px 0px #0000001a;
+	background: #ffffff;
+}
+
+.editContactRespContainer {
+	z-index: 100000;
+	width: 396px;
+	height: 760px;
+	bottom: 0px;
+	left: calc(50% - width/2);
+	margin-bottom: -3000px;
+	gap: 49px;
+	border-radius: 30px;
+	background-color: #ffffff;
+	position: fixed;
+}
+
+.addNewContactRespContainerTransition {
+	transition: transform 0.45s ease-in-out;
+	transform: translateY(-3082px);
+}
+
+.addNewContactRespContainerTransitionRemove {
+	transition: transform 0.85s ease-in-out;
+	transform: translateY(+3082px);
+}
+
+.editContactRespContainerTransition {
+	transition: transform 0.45s ease-in-out;
+	transform: translateY(-3082px);
+}
+
+.editContactRespContainerTransitionRemove {
+	transition: transform 0.85s ease-in-out;
+	transform: translateY(+3082px);
+}
+
+.addNewContactRespCloseContainer {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 24px;
+	left: 348px;
+	padding: 4px 0px 0px 0px;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.AddNewContactRespCloseButton {
+	width: 13.15px;
+	height: 13.15px;
+	top: 9.43px;
+	left: 9.42px;
+}
+
+.addNewContactWindowHeaderContainer {
+	width: 396px;
+	height: 352px;
+	padding: 66px 24px 66px 24px;
+	gap: 12px;
+	position: fixed;
+	background-color: #2a3647;
+	border-radius: 30px 30px 0px 0px;
+}
+
+.editContactWindowHeaderContainer {
+	width: 396px;
+	height: 352px;
+	padding: 66px 24px 66px 24px;
+	gap: 12px;
+	position: fixed;
+	background-color: #2a3647;
+	border-radius: 30px 30px 0px 0px;
+}
+
+.addNewContactWindowHeader {
+	width: 282px;
+	height: 104px;
+	gap: 16px;
+	position: fixed;
+	margin-top: 50px;
+}
+
+.editContactWindowHeader {
+	width: 282px;
+	height: 104px;
+	gap: 16px;
+	position: fixed;
+	margin-top: 50px;
+}
+
+.addNewContactWindowTextfield {
+	width: 282px;
+	height: 88px;
+	gap: 8px;
+}
+
+.addContactText {
+	width: 282px;
+	height: 56px;
+	font-size: 47px;
+	font-weight: 700;
+	text-align: left;
+	color: #ffffff;
+}
+
+.editContactText {
+	width: 282px;
+	height: 56px;
+	font-size: 47px;
+	font-weight: 700;
+	text-align: left;
+	color: #ffffff;
+	display: inline-block;
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+
+.subTitelAddNewContResp {
+	width: 275px;
+	height: 24px;
+	font-size: 20px;
+	text-align: left;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.blueLineAddNewContResp {
+	width: 90px;
+	border: 3px 0px 0px 0px;
+	border: 3px solid #29abe2;
+}
+
+.addNewContactRespImageContainer {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	top: 292px;
+	left: 138px;
+	border-radius: 70px;
+	border: 3px 0px 0px 0px;
+	background: #ffffff;
+	border: 3px solid #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.editContactRespImageContainer {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	top: 292px;
+	left: 138px;
+	border-radius: 70px;
+	border: 3px 0px 0px 0px;
+	background: #ffffff;
+	border: 3px solid #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.addNewContactRespImageSubContainer {
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	background: #d1d1d1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+
+.addNewContactRespImageSubContainer2 {
+	width: 64px;
+	height: 64px;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.editContactRespLetters {
+	font-size: 31px;
+	font-weight: 500;
+	text-align: center;
+	position: fixed;
+	color: #ffffff;
+}
+
+.addNewContactRespImage {
+	width: 42.67px;
+	height: 42.67px;
+	position: relative;
+}
+
+.addINewContWindowInputfields {
+	width: 364px;
+	height: 153px;
+	top: 444px;
+	left: 16px;
+	gap: 15px;
+	position: absolute;
+}
+
+.editContWindowInputfields {
+	width: 364px;
+	height: 153px;
+	top: 444px;
+	left: 16px;
+	gap: 15px;
+	position: absolute;
+}
+
+.inputResp {
+	width: 364px;
+	height: 41px;
+	margin-bottom: 16px;
+	gap: 8px;
+	padding: 13px 21px 13px 21px;
+	gap: 10px;
+	border-radius: 10px;
+	border: 1px solid #d1d1d1;
+	background-position: 324px;
+	background-repeat: no-repeat;
+}
+
+.inputResp:focus {
+	border: 1px solid #29abe2;
+}
+
+.nameInputResp {
+	background-image: url('../img/Person.png');
+	background-size: 24px;
+}
+
+.emailInputResp {
+	background-image: url('../img/Mail.png');
+	background-size: 22px;
+}
+
+.nameEditResp:focus,
+.emailEditResp:focus,
+.phoneEditResp:focus,
+.nameInputResp:focus,
+.emailInputResp:focus,
+.phoneInputResp:focus {
+	outline: none;
+	border-color: #29abe2;
+}
+
+.phoneInputResp {
+	background-image: url('../img/call.png');
+	background-size: 18px;
+}
+
+.createButtonContainerAddNewContResp {
+	width: 202px;
+	top: 629px;
+	left: 97px;
+	padding: 18px 10px 18px 10px;
+	gap: 4px;
+	border-radius: 10px;
+	background: #2a3647;
+	position: absolute;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.createTextAddNewContResp {
+	position: relative;
+	width: 154px;
+	height: 25px;
+	font-size: 21px;
+	font-weight: 700;
+	text-align: left;
+	color: #ffffff;
+}
+
+.createResponseContainerResponsiv {
+	width: 326px;
+	height: 74px;
+	box-shadow: 0px 0px 4px 0px #0000001a;
+	position: fixed;
+	bottom: -2850px;
+}
+
+.createResponseContainerResponsivTransition {
+	transition: transform 0.45s ease-in-out;
+	transform: translateY(-3000px);
+}
+
+.createResponseContainerResponsivTransitionRemove {
+	transition: transform 0.85s ease-in;
+	transform: translateY(3000px);
+}
+
+.CreateResponseResponsiv {
+	width: 326px;
+	height: 74px;
+	border-radius: 20px;
+	background: #2a3647;
+	box-shadow: 0px 0px 4px 0px #00000026;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.responseResponsiv {
+	width: 276px;
+	height: 24px;
+	font-size: 20px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.contRespWindow {
+	display: none;
+}
+
+.contactRespHeaderCont {
+	width: 213px;
+	height: 104px;
+	top: 128px;
+	left: 16px;
+	gap: 16px;
+	position: fixed;
+}
+
+.contactRespHeader {
+	width: 213px;
+	height: 88px;
+	gap: 8px;
+}

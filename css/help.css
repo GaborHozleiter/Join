@@ -1,0 +1,375 @@
+body {
+	font-family: "Inter";
+	height: 100vh;
+	margin: 0;
+	background-color: #f6f7f8;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+	overflow: scroll;
+}
+
+.title {
+	max-width: 138px;
+	top: 206px;
+	left: 328px;
+	gap: 30px;
+	opacity: 0px;
+}
+
+.titleText {
+	font-family: Inter;
+	font-size: 61px;
+	font-weight: 700;
+	line-height: 73.2px;
+	text-align: left;
+}
+
+.helpDescription {
+	max-width: 95%;
+	top: 311px;
+	left: 328px;
+	gap: 24px;
+	opacity: 0px;
+}
+
+.arrow {
+	width: 37px;
+	height: 37px;
+	position: fixed;
+	right: 3%;
+	padding: 3px 2.5px 2px 2.5px;
+	gap: 0px;
+	opacity: 0px;
+	cursor: pointer;
+}
+
+.arrow:hover {
+	width: 42px;
+	height: 42px;
+	margin-top: -4px;
+}
+
+.joinBlue {
+	color: #0c8ce9;
+}
+
+.greeting {
+	max-width: 1014px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.aboutJoin {
+	max-width: 1014px;
+	gap: 16px;
+	opacity: 0px;
+	margin-top: 24px;
+}
+
+.aboutJoinTitle {
+	width: 346px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.aboutJoinDescription {
+	max-width: 1014px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.howToUse {
+	max-width: 346px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.howToDescription {
+	max-width: 1014px;
+	gap: 16px;
+	opacity: 0px;
+}
+
+.joinInstructions {
+	max-width: 1014px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.stepByStepGuide {
+	max-width: 1014px;
+	gap: 16px;
+	opacity: 0px;
+}
+
+.exploringContainer {
+	max-width: 1014px;
+	gap: 35px;
+	opacity: 0px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.stepOne {
+	width: 21px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.exploring {
+	width: 958px;
+	gap: 0px;
+	opacity: 0px;
+}
+
+.exploringDescriptionTitle {
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+
+.exploringDescription {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.creatingContainer {
+	max-width: 1014px;
+	gap: 35px;
+	opacity: 0px;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 16px;
+}
+
+.stepTwo {
+	width: 26px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.creating {
+	width: 953px;
+	gap: 0px;
+	opacity: 0px;
+}
+
+.creatingDescriptionTitle {
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+
+.creatingDescription {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.addingContainer {
+	max-width: 1014px;
+	gap: 35px;
+	opacity: 0px;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 16px;
+}
+
+.stepThree {
+	width: 26px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.adding {
+	width: 953px;
+	gap: 0px;
+	opacity: 0px;
+}
+
+.addingDescriptionTitle {
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+
+.addingDescription {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.movingContainer {
+	max-width: 1014px;
+	gap: 35px;
+	opacity: 0px;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 16px;
+}
+
+.stepFour {
+	width: 26px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.moving {
+	width: 953px;
+	gap: 0px;
+	opacity: 0px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.movingDescriptionTitle {
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+
+.movingDescription {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.deletingContainer {
+	max-width: 1014px;
+	gap: 35px;
+	opacity: 0px;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 16px;
+}
+
+.stepFive {
+	width: 25px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+.deleting {
+	width: 954px;
+	gap: 0px;
+	opacity: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.deletingDescriptionTitle {
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+
+.deletingDescription {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: left;
+}
+
+.enjoy {
+	width: 346px;
+	margin-top: 32px;
+}
+
+.enjoyText {
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 32.4px;
+	text-align: left;
+}
+
+@media (max-width: 500px) {
+	.title {
+		max-width: 95%;
+		top: 206px;
+		left: 50px;
+		gap: 30px;
+		opacity: 0px;
+	}
+
+	.helpDescription {
+		max-width: 95%;
+		top: 311px;
+		left: 50px;
+		gap: 24px;
+		opacity: 0px;
+	}
+}

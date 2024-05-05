@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/sidemenu.css" />
+		<link rel="stylesheet" href="../css/fonts.css" />
+		<link rel="stylesheet" href="../css/add_task.css" />
+		<link rel="stylesheet" href="../css/add_task_resp.css" />
+		<link rel="stylesheet" href="../templates/add-task-temp.css" />
+		<link rel="shortcut icon" href="../img/Join-Logo.png" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/board.css" />
+		<link rel="stylesheet" href="../css/boardResp.css" />
+		<link rel="stylesheet" href="../css/edit-task.css" />
+		<title>Board</title>
+	</head>
+	<body onload="initBoard()" onclick="closeSidemenu()">
+		<div id="slider-bg" class="d-none"></div>
+		<div w3-include-html="../templates/sidemenu.html"></div>
+		<div class="wrapper-add-task d-none" id="slide-transition-wrapper" onclick="checkHide()">
+			<div class="big-card" id="big-card-slider" onclick="event.stopPropagation()"></div>
+			<div
+				class="main-container"
+				id="add-task-slider"
+				onclick="event.stopPropagation()"></div>
+		</div>
+		<div class="main-content">
+			<section class="top-section">
+				<div class="first-section">
+					<div class="d-flex align-c header-section">
+						<h1>Board</h1>
+						<button class="add-task header-btn" onclick="slideIn(), setPrio('medium')">
+							<img src="../img/add-task-board.png" alt="" />
+						</button>
+					</div>
+					<div class="d-flex search-section">
+						<div class="searchbar-container">
+							<input
+								type="text"
+								id="search-bar"
+								onkeyup="filterTasks()"
+								autocomplete="off"
+								placeholder="Find Task" />
+							<span class="vertical-line"></span>
+							<img src="../img/search.png" alt="" />
+							<img src="../img/search-active.png" alt="" class="d-none" />
+						</div>
+						<button
+							class="add-task main-task-btn"
+							onclick="slideIn(), setPrio('medium')">
+							<p class="remove-on-small">Add Task</p>
+							<img src="../img/add-task-board.png" alt="" />
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="tasks">
+				<div class="flex-col">
+					<div class="col-name">
+						<h2>To do</h2>
+						<div
+							class="plus-btns"
+							onclick="slideIn(), setPrio('medium'), setTaskContainer('to-do-container'), renderUsers();">
+							<img src="../img/plus-btn.png" alt="" />
+							<img src="../img/plus-btn-hover.png" alt="" class="d-none hover" />
+							<img src="../img/plus-btn-active.png" alt="" class="d-none active" />
+						</div>
+					</div>
+					<div
+						class="tasks-container drag-area"
+						id="to-do-container"
+						ondrop="moveTo('to-do-container'); removeHighlight('to-do-container')"
+						ondragover="allowDrop(event); highlight('to-do-container')"
+						ondragleave="removeHighlight('to-do-container')"></div>
+				</div>
+				<div class="flex-col">
+					<div class="col-name">
+						<h2>In progress</h2>
+						<div
+							class="plus-btns"
+							onclick="slideIn(), setPrio('medium'), setTaskContainer('in-progress-container'), renderUsers();">
+							<img src="../img/plus-btn.png" alt="" />
+							<img src="../img/plus-btn-hover.png" alt="" class="d-none hover" />
+							<img src="../img/plus-btn-active.png" alt="" class="d-none active" />
+						</div>
+					</div>
+					<div
+						class="tasks-container drag-area"
+						id="in-progress-container"
+						ondrop="moveTo('in-progress-container'); removeHighlight('in-progress-container')"
+						ondragover="allowDrop(event); highlight('in-progress-container')"
+						ondragleave="removeHighlight('in-progress-container')"></div>
+				</div>
+				<div class="flex-col">
+					<div class="col-name">
+						<h2>Await feedback</h2>
+						<div
+							class="plus-btns"
+							onclick="slideIn(), setPrio('medium'), setTaskContainer('await-feedback-container'), renderUsers();">
+							<img src="../img/plus-btn.png" alt="" />
+							<img src="../img/plus-btn-hover.png" alt="" class="d-none hover" />
+							<img src="../img/plus-btn-active.png" alt="" class="d-none active" />
+						</div>
+					</div>
+					<div
+						class="tasks-container drag-area"
+						id="await-feedback-container"
+						ondrop="moveTo('await-feedback-container'); removeHighlight('await-feedback-container')"
+						ondragover="allowDrop(event); highlight('await-feedback-container')"
+						ondragleave="removeHighlight('await-feedback-container')"></div>
+				</div>
+				<div class="flex-col">
+					<div class="col-name">
+						<h2>Done</h2>
+					</div>
+					<div
+						class="tasks-container drag-area"
+						id="done-container"
+						ondrop="moveTo('done-container'); removeHighlight('done-container')"
+						ondragover="allowDrop(event); highlight('done-container')"
+						ondragleave="removeHighlight('done-container')"></div>
+				</div>
+			</section>
+		</div>
+		<script src="../js/script.js"></script>
+		<script src="../js/board.js"></script>
+		<script src="../templates/sidemenu.js"></script>
+		<script src="../js/add-task.js"></script>
+		<script src="../js/add_task_html.js"></script>
+		<script src="../js/editTaskHtml.js"></script>
+		<script src="../js/drag&drop.js"></script>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+.cancel {
+	width: 66px;
+	height: 24px;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+	color: #2a3647;
+}
+
+.cancelIcon {
+	width: 24px;
+	height: 24px;
+}
+
+.createButtonContainer {
+	width: 214px;
+	height: 57px;
+	padding: 16px;
+	gap: 4px;
+	border-radius: 10px;
+	background: #2a3647;
+	cursor: pointer;
+}
+
+.createButtonContainer:hover {
+	width: 214px;
+	height: 57px;
+	padding: 16px;
+	gap: 4px;
+	border-radius: 10px;
+	background: #007cee;
+	border: none;
+	cursor: pointer;
+}
+
+.saveButtonContainer {
+	width: 126px;
+	height: 57px;
+	padding: 16px;
+	gap: 4px;
+	border-radius: 10px;
+	background: #2a3647;
+	border: none;
+	cursor: pointer;
+}
+
+.saveButtonContainer:hover {
+	width: 126px;
+	height: 57px;
+	padding: 16px;
+	gap: 4px;
+	border-radius: 10px;
+	border: none;
+	background: #007cee;
+	cursor: pointer;
+}
+
+.create {
+	width: 154px;
+	height: 25px;
+	font-family: Inter;
+	font-size: 21px;
+	font-weight: 700;
+	text-align: left;
+	color: #ffffff;
+}
+
+.createIcon {
+	width: 15.49px;
+	height: 11.22px;
+	top: 22.88px;
+	left: 178.26px;
+	color: #ffffff;
+}

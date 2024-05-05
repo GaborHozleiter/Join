@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="../img/Join-Logo.png" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/fonts.css" />
+		<link rel="stylesheet" href="../css/sidemenu.css" />
+		<link rel="stylesheet" href="../css/contacts1.css" />
+		<link rel="stylesheet" href="../css/contacts2.css" />
+		<link rel="stylesheet" href="../css/contacts3.css" />
+		<link rel="stylesheet" href="../css/contacts.resp1.css" />
+		<link rel="stylesheet" href="../css/contacts.resp2.css" />
+		<link rel="stylesheet" href="../css/contacts.resp3.css" />
+		<script src="../js/script.js"></script>
+		<script src="../templates/sidemenu.js"></script>
+		<script src="../js/contacts.js"></script>
+		<script src="../js/contacts.resp.js"></script>
+		<script src="../js/signUp.js"></script>
+		<title>Contacts</title>
+	</head>
+
+	<body onload="initContacts()">
+		<div class="overlay" onclick="closeSmallEditField()"></div>
+		<div class="overlayResp" onclick="closeSmallEditField()"></div>
+		<div w3-include-html="../templates/sidemenu.html"></div>
+		<div class="main-content">
+			<div class="contactList" onclick="closeSidemenu()">
+				<div>
+					<div class="contacts">
+						<div
+							class="addNewContactIconContResp"
+							onclick="openAddNewContactRespWindow()">
+							<div class="addNewContactIconCont">
+								<img src="../img/person_add.png" class="addNewContIconResp" />
+							</div>
+						</div>
+						<div class="editContactIconContResp" onclick="editContactRespWindow()">
+							<div class="addNewContactIconCont">
+								<img src="../img/more_vert.png" class="editNewContIconResp" />
+							</div>
+						</div>
+						<div class="editContSmallContResp">
+							<div class="editBtnCont" onclick="openEditContactRespWindow()">
+								<div class="editIconSmallCont">
+									<img src="../img/edit.png" class="editIconSmall" />
+								</div>
+								<span class="editTextSmall">Edit</span>
+							</div>
+							<div class="deleteBtnCont" onclick="deleteContactResp()">
+								<div class="deleteIconSmallCont">
+									<img src="../img/delete.png" class="editIconSmall" />
+								</div>
+								<span class="editTextSmall">Delete</span>
+							</div>
+						</div>
+						<div class="addContactsBtnDiv" onclick="openAddNewContactWindow()">
+							<button class="addContactBtn">
+								<span class="addNewContactText">Add new contact</span>
+								<img src="../img/person_add.png" class="addPersonToListIcon" />
+							</button>
+						</div>
+						<div id="initContacts"></div>
+						<div class="addNewContactRespContainer" id="addNewContactRespContainer">
+							<div
+								class="addNewContactRespCloseContainer"
+								onclick="closeAddNewContactRespWindow()">
+								<img
+									src="../img/close (1).png"
+									class="AddNewContactRespCloseButton" />
+							</div>
+							<div class="addNewContactWindowHeaderContainer">
+								<div class="addNewContactWindowHeader">
+									<div class="addNewContactWindowTextfield">
+										<span class="addContactText">Add contact</span>
+										<span class="subTitelAddNewContResp"
+											>Tasks are better with a team!</span
+										>
+										<div class="blueLineAddNewContResp"></div>
+									</div>
+								</div>
+							</div>
+							<div class="addNewContactRespImageContainer">
+								<div class="addNewContactRespImageSubContainer">
+									<div class="addNewContactRespImageSubContainer2">
+										<img
+											src="../img/person (1).png"
+											class="addNewContactRespImage" />
+									</div>
+								</div>
+							</div>
+							<form onsubmit="addNewContactResp(event)">
+								<div class="addINewContWindowInputfields">
+									<input
+										type="text"
+										class="inputResp nameInputResp"
+										placeholder="Name"
+										required />
+									<input
+										type="email"
+										class="inputResp emailInputResp"
+										placeholder="Email"
+										required />
+									<input
+										type="number"
+										class="inputResp phoneInputResp"
+										placeholder="Phone"
+										required />
+								</div>
+								<button class="createButtonContainerAddNewContResp">
+									<div class="center">
+										<span class="createTextAddNewContResp">Create contact</span>
+									</div>
+									<div>
+										<img
+											src="../img/check.png"
+											class="createIconAddNewContResp" />
+									</div>
+								</button>
+							</form>
+						</div>
+
+						<div class="editContactRespContainer">
+							<div
+								class="addNewContactRespCloseContainer"
+								onclick="closeEditContactRespWindow()">
+								<img
+									src="../img/close (1).png"
+									class="AddNewContactRespCloseButton" />
+							</div>
+							<div class="editContactWindowHeaderContainer">
+								<div class="editContactWindowHeader">
+									<div class="addNewContactWindowTextfield">
+										<span class="editContactText">Edit contact</span>
+										<div class="blueLineAddNewContResp"></div>
+									</div>
+								</div>
+							</div>
+							<div class="editContactRespImageContainer">
+								<div
+									class="addNewContactRespImageSubContainer"
+									id="editContactRespImageSubContainer">
+									<div class="addNewContactRespImageSubContainer2">
+										<span class="editContactRespLetters">GH</span>
+									</div>
+								</div>
+							</div>
+							<form onsubmit="editContactResp(event)">
+								<div class="editContWindowInputfields">
+									<input
+										type="text"
+										class="inputResp nameEditResp"
+										id="nameEditResp"
+										placeholder="Name"
+										required />
+									<input
+										type="email"
+										class="inputResp emailEditResp"
+										id="emailEditResp"
+										placeholder="Email"
+										required />
+									<input
+										type="number"
+										class="inputResp phoneEditResp"
+										id="phoneEditResp"
+										placeholder="Phone"
+										required />
+								</div>
+								<div class="editContactRespButtons">
+									<button
+										class="editContactRespDeleteBtnCont"
+										onclick="deleteContactByEditResp(event)">
+										<div class="editContactRespDeleteBtn">Delete</div>
+									</button>
+									<button class="editContactRespEditBtnCont">
+										<div class="editContactRespEditBtn">Save</div>
+										<div class="editContactRespCheckIconCont">
+											<img
+												src="../img/check.png"
+												class="editContactRespCheckIconCont" />
+										</div>
+									</button>
+								</div>
+							</form>
+						</div>
+
+						<div class="createResponseContainerResponsiv">
+							<div class="CreateResponseResponsiv">
+								<span class="responseResponsiv">Contact successfully created </span>
+							</div>
+						</div>
+						<div class="contRespWindow">
+							<div class="contactRespHeaderCont">
+								<div class="contactRespHeader">
+									<span class="contactsRespHeaderTitle">Contacts</span>
+									<span class="contactsRespHeaderSubtitle"
+										>Better with a team</span
+									>
+									<div class="contactsRespHeaderBlueLine"></div>
+								</div>
+							</div>
+							<div class="blueArrowLeftContainer" onclick="closeContactDetailsResp()">
+								<img src="../img/Vector.png" class="blueArrowLeft" />
+							</div>
+							<div class="contactDetailsRespCont">
+								<div class="contactDetailsRespHeader">
+									<div class="inicialCircleRespCont">
+										<div class="inicialCircleResp">
+											<div class="inicialCircleGroundResp">
+												<span class="inicialCircleRespLetters">TW</span>
+											</div>
+										</div>
+									</div>
+									<div class="contactNameRespCont">
+										<div class="contactNameResp">
+											<span class="contactNameTextResp">Tatjana Wolf</span>
+										</div>
+									</div>
+								</div>
+								<div class="contInfTitleCont">
+									<span class="contInfTitle">Contact Information</span>
+								</div>
+								<div class="detailsFieldContactResp">
+									<div class="emailFieldContactResp">
+										<span class="emailContactRespTitle">Email</span>
+										<span class="emailContactResp">wolf@gmail.com</span>
+									</div>
+									<div class="emailFieldContactResp marginTop">
+										<span class="emailContactRespTitle">Phone</span>
+										<span class="phoneContactResp">+49 2222 222 22 2</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contactsTitle">
+				<div>
+					<span class="title">Contacts</span>
+				</div>
+				<div class="blueLine"></div>
+				<div>
+					<span class="subtitle">Better with a team</span>
+				</div>
+			</div>
+			<div class="contactOverview"></div>
+			<div class="addNewContactContainer" id="addNewContactContainer">
+				<div class="containerLeft">
+					<div class="LogoContainerAddNewContact">
+						<img src="../img/join_logo.png" class="LogoAddNewContact" />
+					</div>
+					<div class="addNewContactTitle">
+						<div class="addContactText">
+							<span class="addContact">Add contact</span>
+							<span class="addContactSubtext">Tasks are better with a team!</span>
+						</div>
+						<div class="underLineBlue"></div>
+					</div>
+				</div>
+				<div class="containerRight">
+					<div class="closeDiv" onclick="closeAddNewContactWindow()">
+						<img src="../img/close.png" class="closeButton" />
+					</div>
+					<div class="imageEndInputField">
+						<div class="image">
+							<div class="imageCircle">
+								<img src="../img/imgPerson.png" class="addContactImage" />
+							</div>
+						</div>
+					</div>
+					<div>
+						<form class="inputFileds" onsubmit="addNewContact(event)">
+							<div>
+								<input
+									type="text"
+									class="nameInputContainer"
+									required
+									placeholder="Name" />
+							</div>
+							<div>
+								<input
+									type="email"
+									class="emailInputContainer"
+									required
+									placeholder="Email" />
+							</div>
+							<div>
+								<input
+									type="text"
+									class="phoneInputContainer"
+									required
+									placeholder="Phone" />
+							</div>
+							<div class="buttons">
+								<div class="cancelButtonContainer" onclick="cancelInputValue()">
+									<span class="cancel">Cancel</span>
+									<img src="../img/iconoir_cancel.png" class="cancelIcon" />
+								</div>
+								<button type="submit" class="createButtonContainer">
+									<span class="create">Create contact</span>
+									<img src="../img/check.png" class="createIcon" />
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="addNewContactContainer" id="editContactContainer">
+				<div class="containerLeft">
+					<div class="LogoContainerAddNewContact">
+						<img src="../img/join_logo.png" class="LogoAddNewContact" />
+					</div>
+					<div class="addNewContactTitle">
+						<div class="addContactText">
+							<span class="addContact">Edit contact</span>
+						</div>
+						<div class="underLineBlue"></div>
+					</div>
+				</div>
+				<div class="containerRight">
+					<div class="closeDiv" onclick="closeEditContactWindow()">
+						<img src="../img/close.png" class="closeButton" />
+					</div>
+					<div class="imageEndInputField">
+						<div class="image">
+							<div class="imageCircle" id="imageColor">
+								<span id="ContactInicial" class="inicial"></span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<form class="inputFileds" onsubmit="editContact(event)">
+							<div>
+								<input
+									type="text"
+									class="nameEditContainer"
+									required
+									placeholder="Name" />
+							</div>
+							<div>
+								<input
+									type="email"
+									class="emailEditContainer"
+									required
+									placeholder="Email" />
+							</div>
+							<div>
+								<input
+									type="text"
+									class="phoneEditContainer"
+									required
+									placeholder="Phone" />
+							</div>
+							<div class="buttons">
+								<div class="deleteContainer" onclick="deleteContactInEditWindow()">
+									<span class="cancel">Delete</span>
+								</div>
+								<button type="submit" class="saveButtonContainer">
+									<span class="create">Save</span>
+									<img src="../img/check.png" class="createIcon" />
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="CreateResponseContainer" id="CreateResponseContainer">
+				<div class="CreateResponse">
+					<span class="response">Contact succesfully created </span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,414 @@
+body {
+	position: relative;
+	z-index: 1;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 50000;
+	background-color: #000000;
+	opacity: 0.3;
+	display: none;
+}
+
+.overlayResp {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 50000;
+	background-color: #000000;
+	opacity: 0.3;
+	display: none;
+}
+
+.main-content {
+	background-color: #f6f7f8;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.contactList {
+	width: 464px;
+	box-shadow: 4px 0px 6px 0px #00000014;
+	margin-left: -96px;
+	margin-top: -110px;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	overflow-y: scroll;
+}
+
+.addContactsBtnDiv {
+	width: 456px;
+	height: 101px;
+	padding: 22.5px 52px 22.5px 52px;
+	gap: 10px;
+	margin-top: 24px;
+	position: sticky;
+	top: 0;
+	background-color: #ffffff;
+}
+
+.addContactBtn {
+	width: 352px;
+	height: 56px;
+	top: 22.5px;
+	left: 52px;
+	padding: 12px 0px 12px 0px;
+	gap: 16px;
+	border-radius: 10px;
+	border: 1px 0px 0px 0px;
+	background: #2a3647;
+	border: 1px solid #2a3647;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.addContactBtn:hover {
+	background-color: #0c8ce9;
+	border: 1px solid #0c8ce9;
+}
+
+.addNewContactText {
+	width: 175px;
+	height: 25px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 21px;
+	font-weight: 700;
+	text-align: left;
+	color: #ffffff;
+}
+
+.addPersonToListIcon {
+	width: 29.33px;
+	height: 20.91px;
+	color: #d9d9d9;
+}
+
+.listIniciale {
+	padding: 17px 36px 17px 36px;
+	gap: 8px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.firstCharacter {
+	margin-left: 38px;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+	color: #000000;
+}
+
+.contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.partingLineDiv {
+	padding: 8px 0px 8px 0px;
+	gap: 10px;
+	margin-top: 12px;
+	margin-bottom: 4px;
+}
+
+.listInitiale {
+	margin-top: 8px;
+}
+
+.partingLine {
+	max-width: 352px;
+	height: 0px;
+	gap: 0px;
+	border: 1px 0px 0px 0px;
+	border: 1px solid #d1d1d1;
+}
+
+.contactCard {
+	padding: 15px 24px 15px 24px;
+	gap: 35px;
+	border-radius: 10px;
+	background: #ffffff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+}
+
+.contactCard:hover {
+	padding: 15px 24px 15px 24px;
+	gap: 35px;
+	border-radius: 10px;
+	background: #f5f5f5;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+}
+
+.monogramCircle {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mongram {
+	font-family: Inter;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	color: white;
+}
+
+.contactDetails {
+	gap: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.contactName {
+	width: 121px;
+	height: 24px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.contactMail {
+	width: 140px;
+	height: 19px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	color: #007cee;
+}
+
+.scrollbar {
+	width: 24px;
+	height: 100%;
+	left: 432px;
+	gap: 0px;
+}
+
+.contactsTitle {
+	position: fixed;
+	width: 569px;
+	height: 73px;
+	top: 206px;
+	left: 743px;
+	gap: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	width: 274px;
+	height: 73px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 61px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.blueLine {
+	width: 0px;
+	height: 59px;
+	gap: 0px;
+	border: 3px 0px 0px 0px;
+	border: 3px solid #29abe2;
+}
+
+.subtitle {
+	width: 235px;
+	height: 32px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 27px;
+	font-weight: 400;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.contactOverview {
+	width: 461px;
+	height: 364px;
+	position: fixed;
+	top: 311px;
+	left: 750px;
+	gap: 21px;
+	background-color: #f6f7f8;
+	margin-left: 3000px;
+}
+
+.contactOverviewTransition {
+	transition: transform 0.35s ease-in-out;
+	transform: translateX(-3000px);
+}
+
+.contactOverviewTransitionRemove {
+	transition: transform 0.35s ease-in-out;
+	transform: translateX(3000px);
+}
+
+.nameContainer {
+	width: 461px;
+	height: 120px;
+	gap: 54px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inicialeCircle {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inicial {
+	font-family: Inter;
+	font-size: 47px;
+	font-weight: 500;
+	text-align: center;
+	color: #ffffff;
+}
+
+.editContactContainer {
+	width: 287px;
+	height: 88px;
+	gap: 8px;
+}
+
+.name {
+	width: 287px;
+	height: 56px;
+	gap: 5px;
+	margin-bottom: 8px;
+}
+
+.fullname {
+	width: 287px;
+	height: 56px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 47px;
+	font-weight: 500;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.changeButtonsContainer {
+	width: 159px;
+	height: 24px;
+	gap: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.editButtonContainer {
+	width: 62px;
+	height: 24px;
+	gap: 13px;
+	cursor: pointer;
+	display: flex;
+}
+
+.editButtonContainer:hover {
+	width: 62px;
+	height: 24px;
+	gap: 13px;
+	cursor: pointer;
+	display: flex;
+	filter: brightness(10%) saturate(220%) invert(51%) sepia(61%) saturate(7400%) hue-rotate(201deg)
+		brightness(97%) contrast(88%);
+}
+
+.editIcon {
+	width: 18.28px;
+	height: 18.25px;
+	color: #2a3647;
+}
+
+.editText {
+	width: 18.28px;
+	height: 18.25px;
+	color: #2a3647;
+}
+
+.deleteButtonContainer {
+	width: 81px;
+	height: 24px;
+	left: 78px;
+	gap: 8px;
+	cursor: pointer;
+	display: flex;
+}
+
+.deleteButtonContainer:hover {
+	width: 81px;
+	height: 24px;
+	left: 78px;
+	gap: 8px;
+	cursor: pointer;
+	display: flex;
+	filter: brightness(10%) saturate(220%) invert(51%) sepia(61%) saturate(7400%) hue-rotate(201deg)
+		brightness(97%) contrast(88%);
+}
+
+.deleteIcon {
+	width: 24px;
+	height: 24px;
+	gap: 0px;
+	color: #2a3647;
+	margin-top: -3px;
+}
+
+.deleteText {
+	width: 49px;
+	height: 19px;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	color: #2a3647;
+}
+
+.contactInformationTitle {
+	width: 207px;
+	height: 74px;
+	gap: 59px;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

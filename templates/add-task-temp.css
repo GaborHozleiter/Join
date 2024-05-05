@@ -1,0 +1,65 @@
+.main-container {
+	max-width: 1116px;
+	max-height: 870px;
+	border-radius: 30px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+	padding: 64px 70px;
+	z-index: 9006;
+	background-color: white;
+	position: fixed;
+	top: calc(50% - 396.5px);
+	right: -1500px;
+	transition: right 0.2s;
+}
+
+.slide-in-transition {
+	right: calc(50% - 488.5px);
+}
+
+.close-window-btn {
+	position: absolute;
+	top: 64px;
+	right: 40px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.close-window-btn:hover {
+	background-color: lightgray;
+}
+
+.wrapper-add-task {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9005;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0);
+	transition: background-color 0.2s;
+	padding: 16px;
+}
+
+.wrapper-transition {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.right-col {
+	margin-right: 0;
+}
+
+.bottom-section {
+	margin-right: 0;
+}
+
+.absolute {
+	position: absolute;
+	top: 90px;
+}
+
+.relative {
+	position: relative;
+}

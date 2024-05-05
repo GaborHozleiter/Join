@@ -1,0 +1,342 @@
+.contactsRespHeaderTitle {
+	width: 211px;
+	height: 56px;
+	font-size: 47px;
+	font-weight: 700;
+	text-align: left;
+	color: #000000;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+
+.contactsRespHeaderSubtitle {
+	width: 175px;
+	height: 24px;
+	font-size: 20px;
+	text-align: left;
+	color: #2a3647;
+	display: inline-block;
+	margin-bottom: 14px;
+}
+
+.contactsRespHeaderBlueLine {
+	width: 90px;
+	border: 3px;
+	border: 3px solid #29abe2;
+}
+
+.blueArrowLeftContainer {
+	width: 32px;
+	height: 32px;
+	top: 128px;
+	left: 380px;
+	gap: 10px;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.blueArrowLeft {
+	width: 24.6px;
+	height: 23.92px;
+	top: 6.49px;
+	left: 6.15px;
+}
+
+.contactDetailsRespCont {
+	width: 330px;
+	height: 274px;
+	top: 280px;
+	left: 16px;
+	gap: 21px;
+	position: fixed;
+}
+
+.contactDetailsRespHeader {
+	width: 320px;
+	height: 80px;
+	gap: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.inicialCircleRespCont {
+	width: 80px;
+	height: 80px;
+	gap: 10px;
+	border-radius: 70px;
+	background: #ffffff;
+	border: 3px solid #ffffff;
+	box-shadow: 0px 0px 4px 0px #0000001a;
+}
+
+.inicialCircleResp {
+	width: 80px;
+	height: 80px;
+}
+
+.inicialCircleRespLetters {
+	font-size: 27px;
+	text-align: center;
+	position: fixed;
+	color: #ffffff;
+}
+
+.inicialCircleGroundResp {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #ffc700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactNameRespCont {
+	width: 220px;
+	height: 43px;
+	gap: 13px;
+}
+
+.contactNameResp {
+	width: 220px;
+	height: 43px;
+	gap: 5px;
+}
+
+.contactNameTextResp {
+	width: 220px;
+	height: 43px;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: left;
+	color: #000000;
+	white-space: nowrap;
+}
+
+.contInfTitleCont {
+	width: 330px;
+	height: 24px;
+	gap: 30px;
+	position: fixed;
+	margin-top: 20px;
+}
+
+.contInfTitle {
+	width: 207px;
+	height: 24px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.detailsFieldContactResp {
+	width: 146px;
+	height: 128px;
+	gap: 22px;
+	margin-top: 60px;
+}
+
+.emailFieldContactResp {
+	width: 124px;
+	height: 53px;
+	gap: 15px;
+}
+
+.emailContactRespTitle {
+	width: 43px;
+	height: 19px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.emailContactResp {
+	width: 150px;
+	height: 19px;
+	font-size: 16px;
+	color: #007cee;
+	display: inline-block;
+	margin-top: 13px;
+}
+
+.phoneContactResp {
+	width: 150px;
+	height: 19px;
+	font-size: 16px;
+	display: inline-block;
+	margin-top: 13px;
+}
+
+.marginTop {
+	margin-top: 14px;
+}
+
+.editContactIconContResp {
+	display: none;
+	position: fixed;
+	width: 56px;
+	height: 56px;
+	bottom: 100px;
+	left: 370px;
+	padding: 0;
+	gap: 10px;
+	border-radius: 46px;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	border: 1px solid #2a3647;
+	border: 1px 0px 0px 0px;
+	background: #2a3647;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.editNewContIconResp {
+	width: 5.33px;
+	height: 21.33px;
+	top: 17.33px;
+	left: 25.33px;
+	position: absolute;
+}
+
+.editContactRespButtons {
+	width: 201px;
+	height: 51px;
+	top: 647px;
+	left: 97.5px;
+	gap: 20px;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+}
+
+.editContactRespDeleteBtnCont {
+	cursor: pointer;
+	width: 82px;
+	height: 51px;
+	padding: 18px 10px 18px 10px;
+	gap: 10px;
+	border-radius: 10px;
+	border: 1px solid #2a3647;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.editContactRespDeleteBtn {
+	width: 62px;
+	height: 24px;
+	font-size: 20px;
+	color: #2a3647;
+}
+
+.editContactRespEditBtnCont {
+	cursor: pointer;
+	width: 99px;
+	height: 51px;
+	padding: 18px 10px 18px 10px;
+	gap: 4px;
+	border-radius: 10px;
+	background-color: #2a3647;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.editContactRespEditBtn {
+	width: 51px;
+	height: 25px;
+	font-size: 21px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.editContactRespCheckIconCont {
+	width: 24px;
+	height: 24px;
+}
+
+.editContactRespCheckIconCont {
+	width: 15.49px;
+	height: 11.23px;
+	top: 19.88px;
+	left: 69.26px;
+}
+
+.editContSmallContResp {
+	width: 116px;
+	height: 100px;
+	padding: 10px 0px 0px 0px;
+	border-radius: 20px 20px 0px 20px;
+	bottom: 100px;
+	left: 340px;
+	margin-left: 1500px;
+	position: fixed;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	display: none;
+}
+
+.editContSmallContRespTransition {
+	transition: transform 0.35s ease-in-out;
+	transform: translateX(-1500px);
+}
+
+.editContSmallContRespTransitionRemove {
+	transition: transform 0.35s ease-in-out;
+	transform: translateX(+1500px);
+}
+
+.editBtnCont {
+	width: 96px;
+	height: 40px;
+	padding: 8px 0px 0px 0px;
+	gap: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.editIconSmallCont {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+}
+
+.editIconSmall {
+	width: 18.28px;
+	height: 18.25px;
+	top: 10.75px;
+	left: 11px;
+}
+
+.editTextSmall {
+	width: 30px;
+	height: 19px;
+	font-size: 16px;
+	color: #2a3647;
+}
+
+.deleteBtnCont {
+	width: 96px;
+	height: 40px;
+	padding: 8px 0px 0px 0px;
+	gap: 8px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.deleteIconSmallCont {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+}
+
+.editContSmallContResp {
+	position: fixed;
+	z-index: 60000;
+}

@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter';
+}
+
+html {
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(168, 168, 168);
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 8px;
+}
